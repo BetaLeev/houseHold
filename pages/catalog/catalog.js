@@ -1,11 +1,12 @@
 var util = require('../../utils/util.js');
 var api = require('../../config/api.js');
+import {categoryList, currentSubCategoryList} from './config.js'
 
 Page({
   data: {
-    categoryList: [],
-    currentCategory: {},
-    currentSubCategoryList: {},
+    categoryList,
+    currentCategory:{},
+    currentSubCategoryList,
     scrollLeft: 0,
     scrollTop: 0,
     goodsCount: 0,
@@ -43,18 +44,27 @@ Page({
   },
   getCurrentCategory: function(id) {
     let that = this;
-    util.request(api.CatalogCurrent, {
-        id: id
-      })
-      .then(function(res) {
-        that.setData({
-          currentCategory: res.data.currentCategory,
-          currentSubCategoryList: res.data.currentSubCategory
-        });
-      });
+    const tmpList = currentSubCategoryList.filter(curr=>curr.pid == id)
+    that.setData({
+      currentCategory: tmpList[0].currentCategory,
+      currentSubCategoryList: tmpList[0].currentSubCategoryList
+    });
+    // util.request(api.CatalogCurrent, {
+    //     id: id
+    //   })
+    //   .then(function(res) {
+    //     that.setData({
+    //       currentCategory: res.data.currentCategory,
+    //       currentSubCategoryList: res.data.currentSubCategory
+    //     });
+    //   });
   },
   onReady: function() {
     // 页面渲染完成
+    this.setData({
+      currentCategory: currentSubCategoryList[0].currentCategory,
+      currentSubCategoryList: currentSubCategoryList[0].currentSubCategoryList
+    });
   },
   onShow: function() {
     // 页面显示
@@ -71,7 +81,6 @@ Page({
     if (this.data.currentCategory.id == event.currentTarget.dataset.id) {
       return false;
     }
-
     this.getCurrentCategory(event.currentTarget.dataset.id);
   }
 })

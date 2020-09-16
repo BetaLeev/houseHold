@@ -4,10 +4,14 @@
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
 		"uglifyFileName": true,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -17,7 +21,8 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"nodeModules": true
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
@@ -316,6 +321,12 @@
 					"name": "公司简介",
 					"pathName": "pages/company/company",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/catalog/catalog",
+					"pathName": "pages/catalog/catalog",
+					"scene": null
 				}
 			]
 		}
