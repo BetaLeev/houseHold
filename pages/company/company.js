@@ -8,30 +8,38 @@ Page({
     companyInfo: [{
       label: '公司简介',
       en: 'Company profile',
-      value: '本公司成立于1992年，有着非常强大的技术。。本公司成立于1992年，有着非常强大的技术。。本公司成立于1992年，有着非常强大的技术。。本公司成立于1992年，有着非常强大的技术。。'
+      value: '本公司成立于2020年，有着非常强大的技术。'
     },
     {
       label: '地址',
       en: 'Address',
-      value: '江西省广州市两江镇'
+      value: '北京'
     },
     {
       label: '电话',
       en: 'Telephone',
-      value: '15007003751'
+      value: '110'
     },
     {
       label: '微信号',
       en: 'WeChat',
-      value: '15007003752'
+      value: '110'
     },
     {
       label: '客服',
       en: 'Service',
-      value: '15007003753'
+      value: '110'
     },
     ],
-    reqData: {},
+    reqData: {
+      companyPhoto:'https://i.loli.net/2020/09/16/lIq2kae5AKGoBZJ.jpg',
+      companyBrief:'本公司成立于2020年，有着非常强大的技术。',
+      companyAddr:'北京',
+      companyPhone:"110",
+      companyWechat:"Lee-zl666",
+      companyLatitude:"39.90960456049752",
+      companyLongitude:'116.3972282409668'
+    },
     markers: [{
       id: 1,
       latitude: '',
