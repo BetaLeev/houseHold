@@ -42,8 +42,9 @@ Page({
       {name:'特价好物',goodList:[{name:'1',picUrl:'',retailPrice:11},{name:'1',picUrl:'',retailPrice:11}]}
     ],
     banner: [
-      {url:''},
-      {url:''}
+      {url:'https://i.loli.net/2020/09/16/cTxlrPzEh189tdi.jpg'},
+      {url:'https://i.loli.net/2020/09/16/M63RoPthvOBcGwp.jpg'},
+      {url:'https://i.loli.net/2020/09/16/lIq2kae5AKGoBZJ.jpg'}
     ],
     channel: [
       {name:'菜单',iconUrl:''},
