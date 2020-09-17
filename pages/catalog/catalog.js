@@ -44,10 +44,11 @@ Page({
   },
   getCurrentCategory: function(id) {
     let that = this;
-    const tmpList = currentSubCategoryList.filter(curr=>curr.pid == id)
+    const tmpList = currentSubCategoryList.find(curr=>curr.pid == id)
+
     that.setData({
-      currentCategory: tmpList[0].currentCategory,
-      currentSubCategoryList: tmpList[0].currentSubCategoryList
+      currentCategory: tmpList.currentCategory,
+      currentSubCategoryList: tmpList.currentSubCategoryList
     });
     // util.request(api.CatalogCurrent, {
     //     id: id
