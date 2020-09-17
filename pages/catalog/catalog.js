@@ -1,6 +1,6 @@
 var util = require('../../utils/util.js');
 var api = require('../../config/api.js');
-import {categoryList, currentSubCategoryList} from './config.js'
+import {categoryList, currentSubCategoryList} from './data/index.js'
 
 Page({
   data: {
