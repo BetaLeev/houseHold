@@ -4,6 +4,9 @@ var util = require('../../utils/util.js');
 var api = require('../../config/api.js');
 var user = require('../../utils/user.js');
 
+import {goods} from './data/index'
+
+
 Page({
   data: {
     canShare: false,
@@ -405,47 +408,61 @@ Page({
     });
   },
 
-  onLoad: function(options) {
-    // 页面初始化 options为页面跳转所带来的参数
-    if (options.id) {
-      this.setData({
-        id: parseInt(options.id)
-      });
-      this.getGoodsInfo();
-    }
+  getMockData: function() {
+    const {checkedSpecPrice, brand, specificationList} = goods
 
-    if (options.grouponId) {
-      this.setData({
-        isGroupon: true,
-      });
-      this.getGrouponInfo(options.grouponId);
-    }
-    let that = this;
-    wx.getSetting({
-        success: function (res) {
-            console.log(res)
-            //不存在相册授权
-            if (!res.authSetting['scope.writePhotosAlbum']) {
-                wx.authorize({
-                    scope: 'scope.writePhotosAlbum',
-                    success: function () {
-                        that.setData({
-                            canWrite: true
-                        })
-                    },
-                    fail: function (err) {
-                        that.setData({
-                            canWrite: false
-                        })
-                    }
-                })
-            } else {
-                that.setData({
-                    canWrite: true
-                });
-            }
-        }
+    this.setData({
+      goods,
+      checkedSpecPrice,
+      brand,
+      specificationList
     })
+  },
+
+  onLoad: function(options) {
+    this.getMockData()
+
+    // 页面初始化 options为页面跳转所带来的参数
+    // if (options.id) {
+    //   this.setData({
+    //     id: parseInt(options.id)
+    //   });
+      
+    //   this.getGoodsInfo();
+    // }
+
+    // if (options.grouponId) {
+    //   this.setData({
+    //     isGroupon: true,
+    //   });
+    //   this.getGrouponInfo(options.grouponId);
+    // }
+    // let that = this;
+    // wx.getSetting({
+    //     success: function (res) {
+    //         console.log(res)
+    //         //不存在相册授权
+    //         if (!res.authSetting['scope.writePhotosAlbum']) {
+    //             wx.authorize({
+    //                 scope: 'scope.writePhotosAlbum',
+    //                 success: function () {
+    //                     that.setData({
+    //                         canWrite: true
+    //                     })
+    //                 },
+    //                 fail: function (err) {
+    //                     that.setData({
+    //                         canWrite: false
+    //                     })
+    //                 }
+    //             })
+    //         } else {
+    //             that.setData({
+    //                 canWrite: true
+    //             });
+    //         }
+    //     }
+    // })
   },
   onShow: function() {
     // 页面显示
@@ -462,24 +479,27 @@ Page({
   //添加或是取消收藏
   addCollectOrNot: function() {
     let that = this;
-    util.request(api.CollectAddOrDelete, {
-        type: 0,
-        valueId: this.data.id
-      }, "POST")
-      .then(function(res) {
-        if (that.data.userHasCollect == 1) {
-          that.setData({
-            collect: false,
-            userHasCollect: 0
-          });
-        } else {
-          that.setData({
-            collect: true,
-            userHasCollect: 1
-          });
-        }
+    that.setData({
+      collect: !this.data.collect,
+    });
+    // util.request(api.CollectAddOrDelete, {
+    //     type: 0,
+    //     valueId: this.data.id
+    //   }, "POST")
+    //   .then(function(res) {
+    //     if (that.data.userHasCollect == 1) {
+    //       that.setData({
+    //         collect: false,
+    //         userHasCollect: 0
+    //       });
+    //     } else {
+    //       that.setData({
+    //         collect: true,
+    //         userHasCollect: 1
+    //       });
+    //     }
 
-      });
+    //   });
 
   },
 
