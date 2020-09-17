@@ -1,11 +1,12 @@
 var util = require('../../utils/util.js');
 var api = require('../../config/api.js');
+import {navList, goodsList} from './data/index'
 
 Page({
   data: {
-    navList: [],
+    navList,
     goodsList: [],
-    id: 0,
+    id: 1,
     currentCategory: {},
     scrollLeft: 0,
     scrollTop: 0,
@@ -30,9 +31,15 @@ Page({
       }
     });
 
+    this.getMockData()
+    // this.getCategoryInfo();
 
-    this.getCategoryInfo();
-
+  },
+  getMockData: function() {
+    this.setData({
+      currentCategory: navList[this.data.id - 1],
+      goodsList: goodsList[this.data.id - 1],
+    });
   },
   getCategoryInfo: function() {
     let that = this;
@@ -126,6 +133,7 @@ Page({
       id: event.currentTarget.dataset.id
     });
 
-    this.getCategoryInfo();
+    this.getMockData();
+    // this.getCategoryInfo();
   }
 })
