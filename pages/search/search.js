@@ -5,8 +5,28 @@ var app = getApp()
 Page({
   data: {
     keywrod: '',
-    searchStatus: false,
-    goodsList: [],
+    searchStatus: true,
+    // goodsList: [],
+    goodsList: [{
+      name: '唐伯虎的文房四宝',
+      picUrl: 'https://i.loli.net/2020/09/16/qkdi3uynBaJQreE.jpg',
+      retailPrice: 8888
+    },
+    {
+      name: '释迦摩尼的舍利',
+      picUrl: 'https://i.loli.net/2020/09/16/LCSY1ItTlOvWVy3.jpg',
+      retailPrice: 999999
+    },
+    {
+      name: '一灯大师手镯',
+      picUrl: 'https://i.loli.net/2020/09/16/1cvr9qYK2Qb4Hal.jpg',
+      retailPrice: 886
+    }, {
+      name: '小龙女的手环',
+      picUrl: 'https://i.loli.net/2020/09/16/3Lr4mipdD86xOJE.jpg',
+      retailPrice: 998
+    }
+  ],
     helpKeyword: [],
     historyKeyword: [],
     categoryFilter: false,
@@ -31,8 +51,7 @@ Page({
     });
   },
   onLoad: function() {
-
-    this.getSearchKeyword();
+    // this.getSearchKeyword();
   },
 
   getSearchKeyword() {

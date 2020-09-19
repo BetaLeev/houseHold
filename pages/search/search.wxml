@@ -2,8 +2,10 @@
   <view class="search-header">
     <view class="input-box">
       <van-icon name="search"/>
-      <input name="input" class="keywrod" focus="true" value="{{keyword}}" confirm-type="search" bindinput="inputChange" bindfocus="inputFocus" bindconfirm="onKeywordConfirm" placeholder="{{defaultKeyword.keyword}}" />
+        <input name="input" class="keywrod" focus="false" value="{{keyword}}" confirm-type="search" bindinput="inputChange" bindconfirm="onKeywordConfirm" placeholder="{{defaultKeyword.keyword}}" />
       <van-icon class="del" wx:if="{{keyword}}" bindtap="clearKeyword" name="cross" />
+      <!-- <input name="input" class="keywrod" focus="true" value="{{keyword}}" confirm-type="search" bindinput="inputChange" bindfocus="inputFocus" bindconfirm="onKeywordConfirm" placeholder="{{defaultKeyword.keyword}}" />
+      <van-icon class="del" wx:if="{{keyword}}" bindtap="clearKeyword" name="cross" /> -->
     </view>
     <view class="right" bindtap="closeSearch">取消</view>
   </view>
@@ -31,6 +33,7 @@
   </view>
 
   <view class="search-result" wx:if="{{ searchStatus && goodsList.length}}">
+  
     <view class="sort">
       <view class="sort-box">
         <view class="item {{currentSortType == 'default' ? 'active' : ''}}" bindtap="openSortFilter" id="defaultSort">
@@ -49,6 +52,7 @@
         <view class="item {{item.checked ? 'active' : ''}}" wx:for="{{filterCategory}}" wx:key="id" data-category-index="{{index}}" bindtap="selectCategory">{{item.name}}</view>
       </view>
     </view>
+  
     <view class="cate-item">
       <view class="b">
         <navigator class="item {{(iindex + 1) % 2 == 0 ? 'item-b' : ''}}" url="/pages/goods/goods?id={{iitem.id}}" wx:for="{{goodsList}}" wx:key="id" wx:for-item="iitem" wx:for-index="iindex">
