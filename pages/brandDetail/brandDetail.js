@@ -1,14 +1,14 @@
 var util = require('../../utils/util.js');
 var api = require('../../config/api.js');
-
+import {goodsList, brand} from './data/index'
 
 var app = getApp();
 
 Page({
   data: {
     id: 0,
-    brand: {},
-    goodsList: [],
+    brand,
+    goodsList,
     page: 1,
     limit: 10
   },
