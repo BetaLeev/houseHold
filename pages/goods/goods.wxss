@@ -39,7 +39,7 @@
 
 .goods-info {
   width: 750rpx;
-  height: 306rpx;
+  /* height: 306rpx; */
   overflow: hidden;
   background: #fff;
 }
@@ -132,8 +132,11 @@
 .goods-info .brand text {
   display: inline-block;
   width: auto;
-  padding: 2px 30rpx 2px 10.5rpx;
+  margin-right: 10rpx;
+  margin-bottom: 20rpx;
+  padding: 2px 25rpx 2px 15.5rpx;
   line-height: 35.5rpx;
+  text-align: center;
   border: 1px solid #f48f18;
   font-size: 25rpx;
   color: #f48f18;

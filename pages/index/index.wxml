@@ -8,7 +8,7 @@
     </navigator>
   </view>
   <!-- 轮播图 -->
-  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="1000" circular>
     <swiper-item wx:for="{{banner}}" wx:key="id">
       <block wx:if="{{item.link>0}}">
         <navigator url="/pages/goods/goods?id={{item.link}}">
@@ -60,7 +60,7 @@
         <navigator url="../goods/goods?id={{item.id}}">
           <image class="img" src="{{item.picUrl}}" background-size="cover"></image>
           <text class="name">{{item.name}}</text>
-          <text class="price">￥{{item.retailPrice}}</text>
+          <!-- <text class="price">￥{{item.retailPrice}}</text> -->
         </navigator>
       </view>
     </view>
@@ -81,7 +81,7 @@
             <image class="img" src="{{item.picUrl}}" background-size="cover"></image>
             <view class="np">
               <text class="name">{{item.title}}</text>
-              <text class="price">￥{{item.price}}元起</text>
+              <!-- <text class="price">￥{{item.price}}元起</text> -->
             </view>
             <text class="desc">{{item.subtitle}}</text>
           </navigator>
@@ -99,7 +99,7 @@
           <navigator url="../goods/goods?id={{iitem.id}}" class="a">
             <image class="img" src="{{iitem.picUrl}}" background-size="cover"></image>
             <text class="name">{{iitem.name}}</text>
-            <text class="price">￥{{iitem.retailPrice}}</text>
+            <!-- <text class="price">￥{{iitem.retailPrice}}</text> -->
           </navigator>
         </view>
       </block>

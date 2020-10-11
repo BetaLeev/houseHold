@@ -36,6 +36,12 @@ Page({
     canWrite: false, //用户是否获取了保存相册的权限
   },
 
+  onPullDownRefresh() {
+    wx.showNavigationBarLoading() //在标题栏中显示加载
+    wx.hideNavigationBarLoading() //完成停止加载
+    wx.stopPullDownRefresh() //停止下拉刷新
+  },
+
   // 页面分享
   onShareAppMessage: function() {
     let that = this;

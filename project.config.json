@@ -326,6 +326,41 @@
 					"id": -1,
 					"name": "pages/catalog/catalog",
 					"pathName": "pages/catalog/catalog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分类页面",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品详情页面",
+					"pathName": "pages/goods/goods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "品牌商详情",
+					"pathName": "pages/brandDetail/brandDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goods/goods",
+					"pathName": "pages/goods/goods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/category/category",
+					"pathName": "pages/category/category",
 					"scene": null
 				}
 			]
