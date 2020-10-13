@@ -43,24 +43,24 @@
     "pages/company/company"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#FFFFFF",
-    "navigationBarTitleText": "家居展示",
+    "navigationBarBackgroundColor":"#b94c47",
+    "navigationBarTitleText": "怀古展示",
     "enablePullDownRefresh": false,
     "navigationBarTextStyle": "black",
     "backgroundColor": "#FFFFFF",
-    "backgroundTextStyle": "dark"
+    "backgroundTextStyle": "light"
   },
   "tabBar": {
-    "backgroundColor": "#fafafa",
+    "backgroundColor":"#b94c47",
     "borderStyle": "white",
-    "selectedColor": "#AB956D",
-    "color": "#666",
+    "selectedColor": "#fafafa",
+    "color": "#AB956D",
     "list": [
       {
         "pagePath": "pages/index/index",
         "iconPath": "static/images/home.png",
         "selectedIconPath": "static/images/home_selected.png",
-        "text": "首页"
+        "text": "怀古之家"
       },
       {
         "pagePath": "pages/catalog/catalog",

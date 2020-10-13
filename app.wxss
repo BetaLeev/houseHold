@@ -2,8 +2,22 @@
 
 .container {
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  /* background: #bd6461b9; */
+  
   font-family: PingFangSC-Light, helvetica, 'Heiti SC';
+
+  background: linear-gradient( #c45555,#b94c47);
+
+     /* animation: rotate 3.5s linear infinite; */
+}
+@keyframes rotate {
+  0% {
+  filter: hue-rotate(0deg);
+  }
+  100% {
+  filter: hue-rotate(360deg);
+  }
 }
 
 view, image, text, navigator {

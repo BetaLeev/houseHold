@@ -10,6 +10,7 @@
 
 .m-menu {
   background: #fff;
+   /* background-color:#b94c47; */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -28,6 +29,8 @@
   height: 58rpx;
   margin: 0 auto;
   margin-bottom: 12rpx;
+
+  border-radius: 50%;
 }
 
 .m-menu text {
@@ -36,7 +39,9 @@
   text-align: center;
   margin: 0 auto;
   line-height: 1;
-  color: #333;
+  /* color: #333; */
+  /* color:#fff */
+  color:#b94c47
 }
 
 .a-section {
@@ -63,6 +68,7 @@
   height: 36rpx;
   font-size: 33rpx;
   line-height: 36rpx;
+  color:#b94c47
 }
 
 .a-brand .b {
@@ -507,7 +513,8 @@
   height: 88rpx;
   width: 100%;
   padding: 0 30rpx;
-  background: #fff;
+  /* background: #fff; */
+   background-color: #b94c47;
   display: flex;
   align-items: center;
 }
@@ -551,7 +558,8 @@
   height: 50rpx;
   line-height: 50rpx;
   padding: 0rpx 25rpx 0 10rpx;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
+  background-color: #b94c47;
   border-top-right-radius: 25rpx;
   border-bottom-right-radius: 25rpx;
   overflow: hidden;
@@ -567,3 +575,4 @@
   height: 100%;
   border-radius: 8rpx;
 }
+

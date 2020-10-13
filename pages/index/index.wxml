@@ -31,7 +31,7 @@
   <view class="a-section a-newgoods">
     <view class="h">
       <navigator url="../brand/brand">
-        <text class="txt">新品首发</text>
+        <text class="txt">乾隆年间</text>
       </navigator>
     </view>
     <view class="b">
@@ -51,7 +51,7 @@
     <view class="h">
       <view>
         <navigator url="../hotGoods/hotGoods">
-          <text class="txt">人气推荐</text>
+          <text class="txt">嘉庆推荐</text>
         </navigator>
       </view>
     </view>
@@ -70,7 +70,7 @@
     <view class="h">
       <view>
         <navigator url="/pages/topic/topic">
-          <text class="txt">专题精选</text>
+          <text class="txt">和珅精选</text>
         </navigator>
       </view>
     </view>
@@ -105,7 +105,7 @@
       </block>
     </view>
     <navigator url="/pages/category/category?id={{item.id}}" class="t">
-      <view class="txt">{{'更多'+item.name+'好物 >'}}</view>
+      <view class="txt">{{'更多溥仪'+item.name+'好物 >'}}</view>
     </navigator>
   </view>
 </view>
