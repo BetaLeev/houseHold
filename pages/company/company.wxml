@@ -9,6 +9,22 @@
       <view class="title">公司简介 | Company profile</view>
       <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
     </view>
+     <view class="item">
+      <view class="title">品牌文化 | Brand culture</view>
+      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
+    </view>
+     <view class="item">
+      <view class="title">发展历程 | Development History</view>
+      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
+    </view>
+     <view class="item">
+      <view class="title">企业荣誉 | Enterprise honor</view>
+      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
+    </view>
+     <view class="item">
+      <view class="title">获奖作品 | Award-winning work</view>
+      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
+    </view>
     <view class="item">
       <view class="title">地址 | Address</view>
       <view class="info" data-value="{{reqData.companyAddr}}" bindlongpress="copy">{{reqData.companyAddr}}</view>
