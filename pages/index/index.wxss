@@ -8,19 +8,26 @@
   height: 417rpx;
 }
 
+.txt{
+  color:#b94c47
+}
+.h> text{
+  color:#fff;
+}
+
 .m-menu {
   background: #fff;
    /* background-color:#b94c47; */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 0rpx;
-  padding-top: 25rpx;
+  /* padding-bottom: 0rpx; */
 }
 
 .m-menu .item {
   width: 150rpx;
-  height: 126rpx;
+  height: 140rpx;
+  padding-top: 25rpx;
 }
 
 .m-menu image {
@@ -58,6 +65,7 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
+  color:#b94c47;
   height: 130rpx;
 }
 
@@ -536,7 +544,9 @@
 .search .txt {
   height: 42rpx;
   line-height: 42rpx;
-  color: #666;
+  /* color: #666; */
+  color:#b94c47;
+
   padding-left: 10rpx;
   font-size: 30rpx;
 }

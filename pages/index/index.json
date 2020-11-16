@@ -1,4 +1,5 @@
 {
-  "navigationBarTitleText": "怀古之家",
-  "enablePullDownRefresh": true
+  "navigationBarTitleText": "怀古典藏",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
 }

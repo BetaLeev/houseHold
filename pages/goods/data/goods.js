@@ -10,9 +10,9 @@ const goods = {
   counterPrice: '2700',
   checkedSpecPrice: '2900',
   brand: {
-    name: '实木'
+    name: '黄花梨'
   },
-  specificationList: [{name: '实木',valueList: [{name: '蓝色',value: '实木蓝色',id:1,checked: true,specification:'实木'},{checked: false,id: 2,name: '红色',value:'实木红色',specification:'实木'}]}],
+  specificationList: [{name: '黄花梨',valueList: [{name: '越南黄花梨',value: '缅甸黄花梨',id:1,checked: true,specification:'黄花梨'},{checked: false,id: 2,name: '红色',value:'实木红色',specification:'黄花梨'}]}],
 }
 
 export default goods

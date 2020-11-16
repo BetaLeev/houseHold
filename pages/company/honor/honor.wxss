@@ -1,0 +1,21 @@
+/* pages/company/honor/honor.wxss */
+.profile{
+  background: #b94c47;
+}
+.title{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.head-img{
+  /* width: 100%; */
+  /* height: 20vh; */
+}
+.profile-container{
+  padding: 20px;
+  letter-spacing: 2px;
+  }
+
+  text{
+    color:#fff;
+  }

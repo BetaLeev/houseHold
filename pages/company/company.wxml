@@ -2,34 +2,46 @@
 <view>
   <view class="company-img">
     <image src="{{reqData.companyPhoto}}"></image>
-    <view class="company-name">{{reqData.companyName}}</view>
+    <view class="company-name">
+      <!-- {{reqData.companyName}} -->
+      怀古典藏
+    </view>
   </view>
   <view class="company-info">
-    <view class="item">
+    <view class="item" bindtap="goProfile" data-query='profile'>
       <view class="title">公司简介 | Company profile</view>
       <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
     </view>
-     <view class="item">
+     <view class="item" bindtap="goProfile" data-query='brand'>
       <view class="title">品牌文化 | Brand culture</view>
-      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
+      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">
+      <!-- {{reqData.companyBrief}} -->
+      精雕细作、隽永秀丽、韵味十足、意境深远
+      </view>
     </view>
-     <view class="item">
+     <view class="item" bindtap="goProfile" data-query='development'>
       <view class="title">发展历程 | Development History</view>
-      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
+      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">
+      <!-- {{reqData.companyBrief}} -->
+      荣膺“2016中国红木家具十大影响力品牌”
+      </view>
     </view>
-     <view class="item">
+     <view class="item" bindtap="goProfile" data-query='honor'>
       <view class="title">企业荣誉 | Enterprise honor</view>
-      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
+      <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">
+      <!-- {{reqData.companyBrief}} -->
+      2011年被评为“中国驰名商标”
+      </view>
     </view>
-     <view class="item">
+     <!-- <view class="item">
       <view class="title">获奖作品 | Award-winning work</view>
       <view class="info" data-value="{{reqData.companyBrief}}" bindlongpress="copy">{{reqData.companyBrief}}</view>
-    </view>
+    </view> -->
     <view class="item">
       <view class="title">地址 | Address</view>
       <view class="info" data-value="{{reqData.companyAddr}}" bindlongpress="copy">{{reqData.companyAddr}}</view>
       <view class="item-right">
-        <button bindtap="showLocation" plain type="primary" size="mini">导航</button>
+        <button class="btn" bindtap="showLocation" plain type="primary" size="mini">导航</button>
         <!-- <van-icon class="right-icon" name="location-o" />     -->
       </view>
     </view>
@@ -37,7 +49,7 @@
       <view class="title">电话 | Tel</view>
       <view class="info" data-value="{{reqData.companyPhone}}" bindlongpress="copy">{{reqData.companyPhone}}</view>
       <view class="item-right">
-        <button bindtap="callPhone" plain type="primary" size="mini">呼叫</button>
+        <button class="btn" bindtap="callPhone" plain type="primary" size="mini">呼叫</button>
       </view>
     </view>
     <view class="item">

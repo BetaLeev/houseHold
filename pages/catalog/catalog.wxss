@@ -36,7 +36,8 @@ page {
 .search .txt {
   height: 42rpx;
   line-height: 42rpx;
-  color: #666;
+  /* color: #666; */
+  color:#b94c47;
   padding-left: 10rpx;
   font-size: 30rpx;
 }
@@ -65,9 +66,11 @@ page {
 }
 
 .catalog .nav .item.active {
-  color: #ab956d;
+  /* color: #ab956d; */
+  color:#b94c47;
   font-size: 36rpx;
-  border-left: 6rpx solid #ab956d;
+  /* border-left: 6rpx solid #ab956d; */
+  border-left: 6rpx solid #b94c47;
 }
 
 .catalog .cate {

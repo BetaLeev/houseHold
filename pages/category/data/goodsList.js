@@ -2,19 +2,19 @@ const goodsList = [
   [
     {
       id: 1,
-      name: '家居1',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/lIq2kae5AKGoBZJ.jpg',
       retailPrice: '300'
     },
     {
       id: 2,
-      name: '家居11',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/GC3c9Zh1gkbpV5U.jpg',
       retailPrice: '300'
     },
     {
       id: 3,
-      name: '家居111',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/lIq2kae5AKGoBZJ.jpg',
       retailPrice: '300'
     }
@@ -22,19 +22,19 @@ const goodsList = [
   [
     {
       id: 1,
-      name: '家居2',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/lIq2kae5AKGoBZJ.jpg',
       retailPrice: '300'
     },
     {
       id: 2,
-      name: '家居22',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/lIq2kae5AKGoBZJ.jpg',
       retailPrice: '300'
     },
     {
       id: 3,
-      name: '家居222',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/GC3c9Zh1gkbpV5U.jpg',
       retailPrice: '300'
     }
@@ -42,19 +42,19 @@ const goodsList = [
   [
     {
       id: 1,
-      name: '家居3',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/GC3c9Zh1gkbpV5U.jpg',
       retailPrice: '300'
     },
     {
       id: 2,
-      name: '家居33',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/n6PtiGSTuKmkOVC.jpg',
       retailPrice: '300'
     },
     {
       id: 3,
-      name: '家居333',
+      name: '红木家具',
       picUrl: 'https://i.loli.net/2020/09/16/n6PtiGSTuKmkOVC.jpg',
       retailPrice: '300'
     }

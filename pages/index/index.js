@@ -85,6 +85,11 @@ Page({
           name: '泰国项坠',
           picUrl: 'https://i.loli.net/2020/09/16/vPzpjZIusni6gDV.jpg',
           retailPrice: 8889
+        },
+        {
+          name: '泰国王妃手串',
+          picUrl: 'https://i.loli.net/2020/09/16/k6MYtoSIwngCRj1.jpg',
+          retailPrice: 889
         }
       ]
     },

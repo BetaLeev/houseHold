@@ -8,6 +8,7 @@
 }
 
 .wx-login-btn {
+  background: #b94c47 !important;
   margin: 60rpx 0 40rpx 0;
   height: 96rpx;
   line-height: 96rpx;

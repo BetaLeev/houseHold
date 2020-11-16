@@ -105,7 +105,7 @@
       </block>
     </view>
     <navigator url="/pages/category/category?id={{item.id}}" class="t">
-      <view class="txt">{{'更多溥仪'+item.name+'好物 >'}}</view>
+      <view class="txt">{{'更多'+item.name+'好物 >'}}</view>
     </navigator>
   </view>
 </view>

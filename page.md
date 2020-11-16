@@ -1,3 +1,5 @@
+# 完整的页面路径
+
 {
   "pages": [
     "pages/index/index",
@@ -8,13 +10,44 @@
     "pages/category/category",
     "pages/goods/goods",
     "pages/search/search",
-    "pages/company/profile/profile",
-    "pages/company/brand/brand",
-    "pages/company/development/development",
-    "pages/company/honor/honor"
+
+
+    "pages/newGoods/newGoods",
+    "pages/hotGoods/hotGoods",
+    "pages/ucenter/address/address",
+    "pages/ucenter/addressAdd/addressAdd",
+    "pages/ucenter/feedback/feedback",
+    "pages/ucenter/footprint/footprint",
+    "pages/ucenter/order/order",
+    "pages/ucenter/orderDetail/orderDetail",
+    "pages/ucenter/couponList/couponList",
+    "pages/ucenter/couponSelect/couponSelect",
+    "pages/ucenter/collect/collect",
+    "pages/auth/accountLogin/accountLogin",
+    "pages/auth/register/register",
+    "pages/auth/reset/reset",
+    "pages/payResult/payResult",
+    "pages/comment/comment",
+    "pages/commentPost/commentPost",
+    "pages/topic/topic",
+    "pages/topicComment/topicComment",
+    "pages/topicDetail/topicDetail",
+    "pages/topicCommentPost/topicCommentPost",
+    "pages/brand/brand",
+    "pages/brandDetail/brandDetail",
+    "pages/checkout/checkout",
+    "pages/about/about",
+    "pages/groupon/myGroupon/myGroupon",
+    "pages/groupon/grouponDetail/grouponDetail",
+    "pages/groupon/grouponList/grouponList",
+    "pages/coupon/coupon",
+    "pages/help/help",
+    "pages/ucenter/aftersale/aftersale",
+    "pages/ucenter/aftersaleList/aftersaleList",
+    "pages/ucenter/aftersaleDetail/aftersaleDetail"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#b94c47",
+    "navigationBarBackgroundColor":"#b94c47",
     "navigationBarTitleText": "怀古典藏",
     "enablePullDownRefresh": false,
     "navigationBarTextStyle": "black",
@@ -22,7 +55,7 @@
     "backgroundTextStyle": "light"
   },
   "tabBar": {
-    "backgroundColor": "#b94c47",
+    "backgroundColor":"#b94c47",
     "borderStyle": "white",
     "selectedColor": "#fafafa",
     "color": "#AB956D",

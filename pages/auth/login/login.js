@@ -10,7 +10,7 @@ Page({
 
   },
   onReady: function() {
-
+  
   },
   onShow: function() {
     // 页面显示
@@ -24,6 +24,15 @@ Page({
 
   },
   wxLogin: function(e) {
+
+    util.showErrorToast('功能开发中');
+    setTimeout(()=>{  wx.switchTab({
+      url: '/pages/index/index',
+    })},1500)
+  
+   
+    return 
+
     if (e.detail.userInfo == undefined) {
       app.globalData.hasLogin = false;
       util.showErrorToast('微信登录失败');

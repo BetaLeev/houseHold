@@ -42,6 +42,16 @@ Page({
     wx.stopPullDownRefresh() //停止下拉刷新
   },
 
+  // 我喜欢
+  like:function(){
+    wx.showToast({
+      title: '我也喜欢这件!',
+      icon: 'success',
+      duration: 2000
+    })
+    
+  },
+
   // 页面分享
   onShareAppMessage: function() {
     let that = this;

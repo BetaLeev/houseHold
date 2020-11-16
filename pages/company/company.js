@@ -8,7 +8,7 @@ Page({
     companyInfo: [{
       label: '公司简介',
       en: 'Company profile',
-      value: '本公司成立于2020年，有着非常强大的技术。'
+      value: '1996年，仙游怀古家私工艺厂创立。'
     },
     {
       label: '地址',
@@ -18,7 +18,7 @@ Page({
     {
       label: '电话',
       en: 'Telephone',
-      value: '110'
+      value: '0594-8271233'
     },
     {
       label: '微信号',
@@ -28,25 +28,58 @@ Page({
     {
       label: '客服',
       en: 'Service',
-      value: '110'
+      value: '0594-8271233'
     },
     ],
     reqData: {
       companyPhoto:'https://i.loli.net/2020/09/16/lIq2kae5AKGoBZJ.jpg',
-      companyBrief:'本公司成立于2020年，有着非常强大的技术。',
-      companyAddr:'北京',
-      companyPhone:"110",
+      companyBrief:'1996年，仙游怀古家私工艺厂创立。',
+      companyAddr:'福建省莆田市仙游县榜头镇泉山社区紫檀中街',
+      // 福建省莆田市仙游县榜头镇泉山社区紫檀中街259号
+      companyPhone:"0594-8271233",
       companyWechat:"Lee-zl666",
-      companyLatitude:"39.90960456049752",
-      companyLongitude:'116.3972282409668'
+      companyLatitude:"25.3859",
+      companyLongitude:'118.73088'
     },
     markers: [{
       id: 1,
-      latitude: '',
-      longitude: '',
-      name: ''
+      latitude: '25.3859',
+      longitude: '118.73088',
+      name: '怀古典藏',
+      label:{
+        content:'怀古典藏',
+        color:'#b94c47',
+      }
     }],
   },
+
+  /**
+   * 跳转企业详情页
+   * @param {*} e 
+   */
+  goProfile:function(e){
+    
+    let query = e.currentTarget.dataset.query;
+    if(query === 'profile'){
+      wx.navigateTo({
+        url: '/pages/company/profile/profile',
+      })
+    }else if(query === 'honor'){
+      wx.navigateTo({
+        url: '/pages/company/honor/honor',
+      })
+    }else if(query === 'brand'){
+      wx.navigateTo({
+        url: '/pages/company/brand/brand',
+      })
+    }else if(query==='development'){
+      wx.navigateTo({
+        url: '/pages/company/development/development',
+      })
+    }
+    
+  },
+
   /**
    * 复制相关信息
    */

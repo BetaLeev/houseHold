@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "公司简介",
+  "navigationBarTextStyle": "white",
   "enablePullDownRefresh": false
 }
