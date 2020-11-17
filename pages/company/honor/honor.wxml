@@ -1,5 +1,7 @@
 <!--pages/company/honor/honor.wxml-->
 <view class="profile">
+  <image class="background" src="/static/p2.jpg"></image>
+
   <view class="profile-container">
     <text>
       <text class="title">

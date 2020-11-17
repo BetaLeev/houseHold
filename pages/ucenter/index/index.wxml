@@ -6,6 +6,7 @@
     </view>
   </view>
 
+
   <view class='separate'></view>
   <view class="user_area">
     <van-cell-group>
@@ -17,11 +18,11 @@
         <image class="icon-img" slot="icon" src="/static/images/footprint.png"></image>
       </van-cell>
 
-      <!-- <van-cell size="large" title="联系客服" value="" is-link class="contact-cell">
-        <contact-button class="contact-btn" type="default-dark" session-from="weapp">
-        </contact-button>
+      <van-cell size="large" title="联系客服" value="" is-link class="contact-cell">
+        <button open-type="contact" class="contact-btn" type="default-dark" session-from="weapp">
+        </button>
         <image class="icon-img" slot="icon" src="/static/images/customer.png"></image>
-      </van-cell> -->
+      </van-cell>
 
       <!-- <van-cell size="large" title="技术支持" value="" is-link bind:click="aboutUs">
         <image class="icon-img" slot="icon" src="/static/images/about.png"></image>

@@ -95,6 +95,7 @@ Page({
     });
   },
   submitFeedback: function(e) {
+    
     if (!app.globalData.hasLogin) {
       wx.navigateTo({
         url: "/pages/auth/login/login"

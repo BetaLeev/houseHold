@@ -1,5 +1,7 @@
 <!--pages/company/development/development.wxml-->
 <view class="profile">
+   <image class="background" src="/static/p3.jpg"></image>
+
   <view class="profile-container">
    <text>
     1996年，仙游怀古家私工艺厂创立，创始人林志权自任厂长兼总设计师，从事红木古典工艺家具的研发设计和生产经营；

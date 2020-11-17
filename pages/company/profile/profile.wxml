@@ -1,6 +1,6 @@
 <!--pages/company/profile/profile.wxml-->
 <view class="profile">
-  <!-- <image class="head-img" src="/static/images/resource/download-2.jpg"></image> -->
+  <image class="background" src="/static/p1.jpg"></image>
   <view class="profile-container">
     <text class="title">
       公司简介
@@ -36,6 +36,9 @@
     <text>
       怀古木业，愿与君共勉。
     </text>
+
+
+    <button class="share-btn" open-type="share">分享</button>
   </view>
 
 </view>

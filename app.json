@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/index/index",
+  
     "pages/catalog/catalog",
     "pages/company/company",
     "pages/ucenter/index/index",
@@ -11,7 +13,10 @@
     "pages/company/profile/profile",
     "pages/company/brand/brand",
     "pages/company/development/development",
-    "pages/company/honor/honor"
+    "pages/company/honor/honor",
+    "pages/ucenter/collect/collect",
+    "pages/ucenter/footprint/footprint",
+    "pages/ucenter/feedback/feedback"
   ],
   "window": {
     "navigationBarBackgroundColor": "#b94c47",
@@ -19,7 +24,8 @@
     "enablePullDownRefresh": false,
     "navigationBarTextStyle": "black",
     "backgroundColor": "#FFFFFF",
-    "backgroundTextStyle": "light"
+    "backgroundTextStyle": "light",
+    "navigationStyle": "default"
   },
   "tabBar": {
     "backgroundColor": "#b94c47",

@@ -95,11 +95,11 @@ page {
 }
 
 .weui-uploader__input-box:active {
-  border-color: #999;
+  border-color: #b94c47;
 }
 
 .weui-uploader__input-box:active:after, .weui-uploader__input-box:active:before {
-  background-color: #999;
+  background-color:#b94c47;
 }
 
 .weui-uploader__input {
@@ -129,7 +129,7 @@ page {
   width: 100%;
   padding-top: 14rpx;
   padding-bottom: 11rpx;
-  color: #7f7f7f;
+  color: #b94c47;
   font-size: 24rpx;
   padding-left: 30rpx;
   padding-right: 30rpx;
@@ -191,5 +191,5 @@ page {
   border-top-right-radius: 50rpx;
   border-bottom-right-radius: 50rpx;
   letter-spacing: 3rpx;
-  background-image: linear-gradient(to right, #9a9ba1 0%, #9a9ba1 100%);
+  background-image: linear-gradient(to right, #b94c47 0%, #b94c47 100%);
 }

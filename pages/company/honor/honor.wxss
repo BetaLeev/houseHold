@@ -1,6 +1,13 @@
 /* pages/company/honor/honor.wxss */
 .profile{
-  background: #b94c47;
+}
+.background{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-size:100% 100%;
+
 }
 .title{
   font-size: 2rem;

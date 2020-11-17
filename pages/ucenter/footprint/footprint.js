@@ -86,7 +86,7 @@ Page({
 
   },
   onLoad: function(options) {
-    this.getFootprintList();
+    // this.getFootprintList();
   },
   onReachBottom() {
     if (this.data.totalPages > this.data.page) {

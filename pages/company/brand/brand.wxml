@@ -1,5 +1,7 @@
 <!--pages/company/brand/brand.wxml-->
 <view class="profile">
+  <image class="background" src="/static/p4.jpg"></image>
+
   <view class="profile-container">
 
     <text class="main-title">| 溯 古 |</text>

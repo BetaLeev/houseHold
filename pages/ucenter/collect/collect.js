@@ -31,7 +31,7 @@ Page({
     });
   },
   onLoad: function(options) {
-    this.getCollectList();
+    // this.getCollectList();
   },
   onReachBottom() {
     if (this.data.totalPages > this.data.page) {
