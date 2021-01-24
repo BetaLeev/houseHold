@@ -1,4 +1,6 @@
-/**app.wxss**/
+.theme-color{
+  background:#ca3c42
+}
 
 .container {
   box-sizing: border-box;
@@ -7,7 +9,7 @@
   
   font-family: PingFangSC-Light, helvetica, 'Heiti SC';
 
-  background: linear-gradient( #c45555,#b94c47);
+  background: linear-gradient( #ca3c42,#b94c47);
 
      /* animation: rotate 3.5s linear infinite; */
 }

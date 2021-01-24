@@ -36,9 +36,12 @@
     <text>
       怀古木业，愿与君共勉。
     </text>
+  </view>
 
 
+  <view class="share-wrap">
     <button class="share-btn" open-type="share">分享</button>
   </view>
+
 
 </view>

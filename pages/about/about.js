@@ -10,9 +10,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    lname: '陈经理',
-    lphone: '13975131029',
-    wx: 'csdywjc'
+    // lname: '陈经理',
+    // lphone: '13975131029',
+    // wx: 'csdywjc'
   },
 
   /**

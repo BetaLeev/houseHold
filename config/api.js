@@ -1,7 +1,7 @@
 // 以下是业务服务器API地址
 // 本机开发时使用
 // var WxApiRoot = 'http://localhost:8080/wx/';
-// 陈奔奔本地
+//
 var WxApiRoot = 'http://192.168.1.5:8080/wx/';
  
 module.exports = {

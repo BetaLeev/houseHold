@@ -522,7 +522,8 @@
   width: 100%;
   padding: 0 30rpx;
   /* background: #fff; */
-   background-color: #b94c47;
+   /* background-color: #b94c47; */
+   background-color: #ca3c42;
   display: flex;
   align-items: center;
 }

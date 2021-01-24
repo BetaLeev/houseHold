@@ -31,7 +31,7 @@
   <view class="a-section a-newgoods">
     <view class="h">
       <navigator url="../brand/brand">
-        <text class="txt">乾隆年间</text>
+        <text class="txt">太平盛世</text>
       </navigator>
     </view>
     <view class="b">
@@ -51,7 +51,7 @@
     <view class="h">
       <view>
         <navigator url="../hotGoods/hotGoods">
-          <text class="txt">嘉庆推荐</text>
+          <text class="txt">吉祥如意</text>
         </navigator>
       </view>
     </view>
@@ -70,7 +70,7 @@
     <view class="h">
       <view>
         <navigator url="/pages/topic/topic">
-          <text class="txt">和珅精选</text>
+          <text class="txt">祥云花鸟</text>
         </navigator>
       </view>
     </view>

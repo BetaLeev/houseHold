@@ -18,7 +18,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+      setTimeout(()=>{this.goIndex()},3000)
   },
 
   /**

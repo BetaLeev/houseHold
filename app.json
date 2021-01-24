@@ -19,7 +19,7 @@
     "pages/ucenter/feedback/feedback"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#b94c47",
+    "navigationBarBackgroundColor": "#ca3c42",
     "navigationBarTitleText": "怀古典藏",
     "enablePullDownRefresh": false,
     "navigationBarTextStyle": "black",
@@ -28,7 +28,7 @@
     "navigationStyle": "default"
   },
   "tabBar": {
-    "backgroundColor": "#b94c47",
+    "backgroundColor": "#ca3c42",
     "borderStyle": "white",
     "selectedColor": "#fafafa",
     "color": "#AB956D",
@@ -69,15 +69,7 @@
   "usingComponents": {
     "van-cell": "./lib/vant-weapp/cell/index",
     "van-cell-group": "./lib/vant-weapp/cell-group/index",
-    "van-picker": "./lib/vant-weapp/picker/index",
-    "van-popup": "./lib/vant-weapp/popup/index",
-    "van-field": "./lib/vant-weapp/field/index",
-    "van-uploader": "./lib/vant-weapp/uploader/index",
-    "van-button": "./lib/vant-weapp/button/index",
-    "van-tag": "./lib/vant-weapp/tag/index",
-    "van-icon": "./lib/vant-weapp/icon/index",
-    "van-checkbox": "./lib/vant-weapp/checkbox/index",
-    "van-steps": "./lib/vant-weapp/steps/index"
+    "van-button": "./lib/vant-weapp/button/index"
   },
   "sitemapLocation": "sitemap.json"
 }

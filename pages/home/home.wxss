@@ -2,6 +2,20 @@
 .home{
   height: 100%;
 }
+.skip{
+  position: absolute;
+  bottom: 30rpx;
+  right: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0rpx 30rpx 0 15rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 25rpx;
+  border-bottom-right-radius: 25rpx;
+  border-top-left-radius: 25rpx;
+  border-bottom-left-radius: 25rpx;
+  color: #fff;
+}
 .background{
   display:fixed;
   height: 100vh;

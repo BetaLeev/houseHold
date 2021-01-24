@@ -19,24 +19,22 @@ Page({
     // goodsCount: 0
 
     newGoods: [
-
       {
-        name: '太上皇龙椅',
+        name: '红酸枝灵芝纹中堂组合',
         picUrl: 'https://i.loli.net/2020/09/16/oYrx4Iuj3kZnf8B.png'
       },
       {
-        name: '皇太子龙椅',
+        name: '红酸枝回纹中堂组合',
         picUrl: 'https://i.loli.net/2020/09/16/RUu4cGMqZAIrY5O.png'
       },
       {
-        name: '康熙龙椅',
+        name: '红酸枝博古纹沙发组合',
         picUrl: 'https://i.loli.net/2020/09/16/RH3lYEZsPj6mdab.png'
       },
       {
-        name: '道光龙椅',
+        name: '红酸枝花鸟纹沙发组合',
         picUrl: 'https://i.loli.net/2020/09/16/5sefjqnEHGWdMiu.png'
       }
-
     ],
     hotGoods: [{
         name: '文房四宝',
@@ -60,9 +58,9 @@ Page({
       },
     ],
     topics: [{
-        title: '专题精选',
+        title: '文房四宝',
         price: 1999,
-        subtitle: '专题精选2',
+        subtitle: '文房四宝',
         picUrl: 'https://i.loli.net/2020/09/16/lhL9JgTf25Inipv.jpg'
       },
 
@@ -70,47 +68,57 @@ Page({
     brands: [],
     groupons: [],
     floorGoods: [{
-      name: '特价好物',
+      name: '雅玩',
       goodsList: [{
-          name: '泰国王妃手串',
+          name: '印度老山檀香',
           picUrl: 'https://i.loli.net/2020/09/16/k6MYtoSIwngCRj1.jpg',
-          retailPrice: 889
+          retailPrice: 3889
         },
         {
-          name: '泰国国王手镯',
+          name: '印度小叶紫檀手串',
           picUrl: 'https://i.loli.net/2020/09/16/uz6ZfE3BmgAI5nJ.jpg',
           retailPrice: 998
         },
         {
-          name: '泰国项坠',
+          name: '印度老山檀香',
           picUrl: 'https://i.loli.net/2020/09/16/vPzpjZIusni6gDV.jpg',
           retailPrice: 8889
         },
         {
-          name: '泰国王妃手串',
-          picUrl: 'https://i.loli.net/2020/09/16/k6MYtoSIwngCRj1.jpg',
+          name: '小叶紫檀福禄',
+          picUrl: 'https://i.loli.net/2021/01/24/i5aWRMqHGA6ceQN.png',
+          retailPrice: 889
+        },
+        {
+          name: '2.0大漆+流苏',
+          picUrl: 'https://i.loli.net/2021/01/24/hXLx7DTE4GBM8Qd.png',
+          retailPrice: 889
+        },
+        {
+          name: '印度小叶紫檀珠',
+          picUrl: 'https://i.loli.net/2021/01/24/Ihc2UGYkSElRoi4.png',
           retailPrice: 889
         }
       ]
     },
     {
-      name: '人间绝品',
+      name: '书香',
       goodsList: [{
-          name: '唐伯虎的文房四宝',
+          name: '文房四宝',
           picUrl: 'https://i.loli.net/2020/09/16/qkdi3uynBaJQreE.jpg',
           retailPrice: 8888
         },
         {
-          name: '释迦摩尼的舍利',
+          name: '印度小叶紫檀珠',
           picUrl: 'https://i.loli.net/2020/09/16/LCSY1ItTlOvWVy3.jpg',
           retailPrice: 999999
         },
         {
-          name: '一灯大师手镯',
+          name: '印度小叶紫檀',
           picUrl: 'https://i.loli.net/2020/09/16/1cvr9qYK2Qb4Hal.jpg',
           retailPrice: 886
         }, {
-          name: '小龙女的手环',
+          name: '印度老山檀香',
           picUrl: 'https://i.loli.net/2020/09/16/3Lr4mipdD86xOJE.jpg',
           retailPrice: 998
         }
@@ -126,6 +134,8 @@ Page({
         url: 'https://i.loli.net/2020/09/16/lIq2kae5AKGoBZJ.jpg'
       }
     ],
+
+    //不同类型展示
     channel: [{
         name: '观书儒雅',
         iconUrl: 'https://i.loli.net/2020/09/16/qkdi3uynBaJQreE.jpg'
@@ -148,7 +158,7 @@ Page({
       },
     ],
     coupon: [],
-    goodsCount: 0
+    goodsCount: 88
   },
 
   onShareAppMessage: function () {
@@ -161,7 +171,7 @@ Page({
 
   onPullDownRefresh() {
     wx.showNavigationBarLoading() //在标题栏中显示加载
-    this.getIndexData();
+    // this.getIndexData();
     wx.hideNavigationBarLoading() //完成停止加载
     wx.stopPullDownRefresh() //停止下拉刷新
   },
@@ -191,55 +201,55 @@ Page({
   },
   onLoad: function (options) {
 
-    // 页面初始化 options为页面跳转所带来的参数
-    if (options.scene) {
-      //这个scene的值存在则证明首页的开启来源于朋友圈分享的图,同时可以通过获取到的goodId的值跳转导航到对应的详情页
-      var scene = decodeURIComponent(options.scene);
-      console.log("scene:" + scene);
+    // // 页面初始化 options为页面跳转所带来的参数
+    // if (options.scene) {
+    //   //这个scene的值存在则证明首页的开启来源于朋友圈分享的图,同时可以通过获取到的goodId的值跳转导航到对应的详情页
+    //   var scene = decodeURIComponent(options.scene);
+    //   console.log("scene:" + scene);
 
-      let info_arr = [];
-      info_arr = scene.split(',');
-      let _type = info_arr[0];
-      let id = info_arr[1];
+    //   let info_arr = [];
+    //   info_arr = scene.split(',');
+    //   let _type = info_arr[0];
+    //   let id = info_arr[1];
 
-      if (_type == 'goods') {
-        wx.navigateTo({
-          url: '../goods/goods?id=' + id
-        });
-      } else if (_type == 'groupon') {
-        wx.navigateTo({
-          url: '../goods/goods?grouponId=' + id
-        });
-      } else {
-        wx.navigateTo({
-          url: '../index/index'
-        });
-      }
-    }
+    //   if (_type == 'goods') {
+    //     wx.navigateTo({
+    //       url: '../goods/goods?id=' + id
+    //     });
+    //   } else if (_type == 'groupon') {
+    //     wx.navigateTo({
+    //       url: '../goods/goods?grouponId=' + id
+    //     });
+    //   } else {
+    //     wx.navigateTo({
+    //       url: '../index/index'
+    //     });
+    //   }
+    // }
 
-    // 页面初始化 options为页面跳转所带来的参数
-    if (options.grouponId) {
-      //这个pageId的值存在则证明首页的开启来源于用户点击来首页,同时可以通过获取到的pageId的值跳转导航到对应的详情页
-      wx.navigateTo({
-        url: '../goods/goods?grouponId=' + options.grouponId
-      });
-    }
+    // // 页面初始化 options为页面跳转所带来的参数
+    // if (options.grouponId) {
+    //   //这个pageId的值存在则证明首页的开启来源于用户点击来首页,同时可以通过获取到的pageId的值跳转导航到对应的详情页
+    //   wx.navigateTo({
+    //     url: '../goods/goods?grouponId=' + options.grouponId
+    //   });
+    // }
 
-    // 页面初始化 options为页面跳转所带来的参数
-    if (options.goodId) {
-      //这个goodId的值存在则证明首页的开启来源于分享,同时可以通过获取到的goodId的值跳转导航到对应的详情页
-      wx.navigateTo({
-        url: '../goods/goods?id=' + options.goodId
-      });
-    }
+    // // 页面初始化 options为页面跳转所带来的参数
+    // if (options.goodId) {
+    //   //这个goodId的值存在则证明首页的开启来源于分享,同时可以通过获取到的goodId的值跳转导航到对应的详情页
+    //   wx.navigateTo({
+    //     url: '../goods/goods?id=' + options.goodId
+    //   });
+    // }
 
-    // 页面初始化 options为页面跳转所带来的参数
-    if (options.orderId) {
-      //这个orderId的值存在则证明首页的开启来源于订单模版通知,同时可以通过获取到的pageId的值跳转导航到对应的详情页
-      wx.navigateTo({
-        url: '../ucenter/orderDetail/orderDetail?id=' + options.orderId
-      });
-    }
+    // // 页面初始化 options为页面跳转所带来的参数
+    // if (options.orderId) {
+    //   //这个orderId的值存在则证明首页的开启来源于订单模版通知,同时可以通过获取到的pageId的值跳转导航到对应的详情页
+    //   wx.navigateTo({
+    //     url: '../ucenter/orderDetail/orderDetail?id=' + options.orderId
+    //   });
+    // }
 
     // this.getIndexData();
   },

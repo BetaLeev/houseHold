@@ -1,5 +1,6 @@
 <!--pages/home/home.wxml-->
 <view class="home">
-<image class="bg-text" src='https://i.loli.net/2020/11/17/AgV7uLScnN6iQJK.png'></image>
-    <image bindtap='goIndex' class="background"  src="https://i.loli.net/2020/11/17/aAH2mwhz941b3qN.jpg"></image>
+<!-- <image class="bg-text" src='https://i.loli.net/2020/11/17/AgV7uLScnN6iQJK.png'></image> -->
+    <image  class="background"  src="https://i.loli.net/2020/11/29/dM4FQ9UkwCAvaLx.jpg"></image>
+    <view class='skip' bindtap='goIndex'>跳过</view>
 </view>

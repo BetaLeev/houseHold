@@ -108,3 +108,18 @@
   },
   "sitemapLocation": "sitemap.json"
 }
+
+
+
+## 完整组件
+// "van-cell": "./lib/vant-weapp/cell/index",
+    // "van-cell-group": "./lib/vant-weapp/cell-group/index",
+    // "van-picker": "./lib/vant-weapp/picker/index",
+    // "van-popup": "./lib/vant-weapp/popup/index",
+    // "van-field": "./lib/vant-weapp/field/index",
+    // "van-uploader": "./lib/vant-weapp/uploader/index",
+    // "van-button": "./lib/vant-weapp/button/index",
+    // "van-tag": "./lib/vant-weapp/tag/index",
+    // "van-icon": "./lib/vant-weapp/icon/index",
+    // "van-checkbox": "./lib/vant-weapp/checkbox/index",
+    // "van-steps": "./lib/vant-weapp/steps/index"
