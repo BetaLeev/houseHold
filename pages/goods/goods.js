@@ -14,7 +14,10 @@ Page({
     goods: {},
     groupon: [], //该商品支持的团购规格
     grouponLink: {}, //参与的团购
-    attribute: [],
+    attribute: [
+      {attribute:'材质',value:'大红酸枝'},
+      {attribute:'产地',value:'印度'}
+    ],
     issueList: [],
     comment: [],
     brand: {},

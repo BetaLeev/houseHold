@@ -190,5 +190,5 @@
 <view bindtap="addCollectOrNot" wx:if="{{!isGroupon}}" class="bottom-btn">
   <!-- <view wx:if="{{collect}}" class="cancel">取消收藏</view>
   <view wx:else class="r">加入收藏</view> -->
-  <view  class="r" bindtap='like'>我喜欢</view>
+  <view  class="r theme-color" bindtap='like'>我喜欢</view>
 </view>
